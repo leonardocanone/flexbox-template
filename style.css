@@ -2,3 +2,60 @@
     margin: 0;
     padding: 0;
 }
+
+ .cabecalho{
+    border: 1px black solid;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    justify-content: space-between;
+}
+
+button{
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    /* width: 40px;
+    height: 40px;
+    border-radius: 20px; */
+}
+/* Essa configuração do button nem foi pedida no enunciado da Prática guiada, mas um aluno pediu então surgiu um conhecimento importante aqui. Além de poder mudar a altura e a largura do botão, podemos utilizar o border-radius, recurso o qual deixa o botão com os cantos arredondados, com uma aparência mais moderna. O que descobrimos pela Ana foi que se fizermos um botão com altura e largura iguais + o berder radius acredito com metade do valor, como no exemplo comentado acima (40, 40 e 20), teremos então um botão em formato circular. */
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.container{
+    display: flex;
+    /* flex-direction: column; */
+    height: 80vh;
+    /* gap: 20px; */
+    padding: 10px 13px;
+}
+
+/* Explicação do porque utilizamos esse 80vh. Depois que aplicamos o space-between no body, os textos ficaram centralizados, e então para acertar somente a posição desses textos, primeiro criamos uma div entre os articles e em seguida dentro dessa div, criamos uma classe específica para fazer alterações nos textos dos parágrafos dos articles. Ao analisarmos o espaço ocupado pela div no Devtools, percebemos que ele estava do tamanho exato da quantidade de linhas de texto, então a correção disso foi definirmos uma altura de 80vh, considerando que somado ao head e ao footer de 10vh cada, daria 100% da ocupação da tela, e assim, automaticamente o texto ficou posicionado na parte de cima da página. Já o gap, pos sua vez, possibilitou darmos um espaço entre os textos dos parágrafos.*/ 
+
+.menu-esquerda{
+    border: 1px solid black;
+    width: 300px;
+}
+
+.menu-direita{
+    border: 1px solid black;
+    order: 1;
+    width: 300px;
+    /* align-self: stretch; */
+} 
+/* A Ana utilizou esse exemplo do stretch, mas na verdade ele não alterou nada na página, como ela mesma disse, então resolvi deixar comentado.*/
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 16px;
+    gap: 20px;
+}
+
