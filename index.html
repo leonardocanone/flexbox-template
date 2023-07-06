@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prática de Grid</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Prática de Flex</title>
 </head>
 
 <body>
-    <header>
+    <header class="cabecalho">
         <section>
             <h2>Logo</h2>
         </section>
@@ -19,7 +20,10 @@
     </header>
 
     <main>
-        <section>
+        <section class="container">
+            <aside class="menu-esquerda">LADO ESQUERDO</aside>
+            <aside class="menu-direita">LADO DIREITO</aside>
+            <div class="text-container">
             <article>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit in sed laudantium a. Eos vitae, tempora
                     facere
@@ -50,17 +54,18 @@
                     quaerat, commodi reiciendis dolorum nihil error, fuga cumque neque laudantium quis esse labore?
                     Exercitationem consectetur id non.</p>
             </article>
-
+            </div>  
         </section>
 
         <section>
             <figure>
-
+                <!-- <img src="/assets/img.jpeg">
+                <figcaption>Teste</figcaption> -->
             </figure>
         </section>
     </main>
 
-    <footer>
+    <footer class="cabecalho">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </footer>
 </body>
